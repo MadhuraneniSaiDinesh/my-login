@@ -1,13 +1,13 @@
-import axios from "axios"
+import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
-})  
-
-export const signupUser = (data) => {
-  return API.post("/signup", data)
-}
+  baseURL: "https://my-login-pgxf.onrender.com"
+});
 
 export const loginUser = (data) => {
-  return API.post("/login", data)
-}
+  return API.post("/login", data);
+};
+
+export const signupUser = (data) => {
+  return API.post("/signup", data);
+};
